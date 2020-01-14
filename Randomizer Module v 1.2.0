@@ -35,4 +35,4 @@ while True:
         print (f"Your choice will be {choiceRnd}!")
     elif choice1 == "N" or choice1 == "n":
         sys.exit("Closing now")
-        
+         
