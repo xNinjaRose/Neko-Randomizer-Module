@@ -1,194 +1,38 @@
-import random
+import random as rnd 
 import sys
+import os
 
-item1 = ""
+#Store the input strings to be randomized
+items = []
 
-def ask2 (item1,item2):
-    items = (item1,item2)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-
-def ask3 (item1,item2,item3):
-    items = (item1,item2,item3)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-
-def ask4 (item1,item2,item3,item4):
-    items = (item1,item2,item3,item4)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-
-def ask5 (item1,item2,item3,item4,item5):
-    items = (item1,item2,item3,item4,item5)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-
-def ask6 (item1,item2,item3,item4,item5,item6):
-    items = (item1,item2,item3,item4,item5,item6)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-	
-def ask7 (item1,item2,item3,item4,item5,item6, item7):
-    items = (item1,item2,item3,item4,item5,item6, item7)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-	
-def ask8 (item1,item2,item3,item4,item5,item6, item7,item8):
-    items = (item1,item2,item3,item4,item5,item6, item7,item8)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-	
-def ask9 (item1,item2,item3,item4,item5,item6, item7,item8,item9):
-    items = (item1,item2,item3,item4,item5,item6,item7,item8,item9)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-	
-def ask10 (item1,item2,item3,item4,item5,item6, item7,item8,item9,item10):
-    items = (item1,item2,item3,item4,item5,item6, item7,item8,item9,item10)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-	
-def ask11 (item1,item2,item3,item4,item5,item6, item7,item8,item9,item10,item11):
-    items = (item1,item2,item3,item4,item5,item6, item7,item8,item9,item10,item11)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-	
-def ask12 (item1,item2,item3,item4,item5,item6, item7,item8,item9,item10,item11,item12):
-    items = (item1,item2,item3,item4,item5,item6, item7,item8,item9,item10,item11,item12)
-    choice = random.choice(items)
-    print ("*****************************")
-    print (f"Your choice will be {choice}!")
-
+#Title
+print ("*********************************")
 print ("*********************************")
 print ("Welcome to the Randomizer Module!")
 print ("*********************************")
-while True:
-	choice1 = input("Do you have something to be randomized? Y or N ")
-	if choice1 == "Y" or choice1 == "y":
-		choice2 = input("How many things do you want randomized? Enter 2 through 12: ")
-		if choice2 == "2":
-			print ("Type two objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			ask2(item1,item2)
-		elif choice2 == "3":
-			print ("Type three objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			ask3(item1,item2,item3)
-		elif choice2 == "4":
-			print ("Type four objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			ask4(item1,item2,item3,item4)
-		elif choice2 == "5":
-			print ("Type five objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			item5 = str(input())
-			ask5(item1,item2,item3,item4,item5)
-		elif choice2 == "6":
-			print ("Type six objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			item5 = str(input())
-			item6 = str(input())
-			ask6(item1,item2,item3,item4,item5,item6)
-		elif choice2 == "7":
-			print ("Type seven objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			item5 = str(input())
-			item6 = str(input())
-			item7 = str(input())
-			ask7(item1,item2,item3,item4,item5,item6, item7)
-		elif choice2 == "8":
-			print ("Type eight objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			item5 = str(input())
-			item6 = str(input())
-			item7 = str(input())
-			item8 = str(input())
-			ask8(item1,item2,item3,item4,item5,item6, item7,item8)
-		elif choice2 == "9":
-			print ("Type nine objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			item5 = str(input())
-			item6 = str(input())
-			item7 = str(input())
-			item8 = str(input())
-			item9 = str(input())
-			ask9(item1,item2,item3,item4,item5,item6, item7,item8,item9)
-		elif choice2 == "10":
-			print ("Type ten objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			item5 = str(input())
-			item6 = str(input())
-			item7 = str(input())
-			item8 = str(input())
-			item9 = str(input())
-			item10 = str(input())
-			ask10(item1,item2,item3,item4,item5,item6, item7,item8,item9,item10)
-		elif choice2 == "11":
-			print ("Type eleven objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			item5 = str(input())
-			item6 = str(input())
-			item7 = str(input())
-			item8 = str(input())
-			item9 = str(input())
-			item10 = str(input())
-			item11 = str(input())
-			ask11(item1,item2,item3,item4,item5,item6, item7,item8,item9,item10,item11)
-		elif choice2 == "12":
-			print ("Type twelve objects or items you want to have randomized and chosen: ")
-			item1 = str(input())
-			item2 = str(input())
-			item3 = str(input())
-			item4 = str(input())
-			item5 = str(input())
-			item6 = str(input())
-			item7 = str(input())
-			item8 = str(input())
-			item9 = str(input())
-			item10 = str(input())
-			item11 = str(input())
-			item12 = str(input())
-			ask12(item1,item2,item3,item4,item5,item6, item7,item8,item9,item10,item11,item12)
-		else:
-			print ("THAT IS NOT A PROPER RESPONSE! PLEASE TRY AGAIN!")
-	elif choice1 == "N" or choice1 == "n":
-		sys.exit()
+print ("*****Created by NinjaRose********")
+print ("*********************************")
 
-	
+
+#function to get the Input from the user and add it to the item array
+def GetInput():     
+    choice2 = int(input("How many things do you want randomized?:  "))
+    print ("Enter your choices, then click Enter after each: ")
+    i = 0
+    while i < choice2:
+        items.append(input())
+        i += 1
+    return items
+
+#Randomizer prompt using the input array to choose a random object
+while True:
+    choice1 = input("Do you have something to be randomized? Y or N ")
+    if choice1 == "Y" or choice1 == "y":
+        os.system('cls' if os.name == 'nt' else 'clear')
+        GetInput()
+        choiceRnd = rnd.choice(items)
+        print ("*****************************")
+        print (f"Your choice will be {choiceRnd}!")
+    elif choice1 == "N" or choice1 == "n":
+        sys.exit("Closing now")
+        
